@@ -613,7 +613,13 @@ select num_ped as 'Pedido',
     order by num_ped;
     
 -- 	20)	pedidos de cliente solteiro
-
+select num_ped as 'Pedido',
+	nome_cli as 'Cliente',
+    nome_conj as 'Conjuge'
+	from conjuges cj
+    right join clientes c on cj.cod_cli = c.cod_cli
+    join pedidos p on c.cod_cli = p.cod_cli
+    where nome_conj is null;
 
 -- 	21)	pedidos de cliente solteiro que comprou 'marisa monte';
 -- 	22)	pedidos de 'marisa monte', com nome do funcionario e nome do cliente
