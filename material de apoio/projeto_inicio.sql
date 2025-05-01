@@ -603,7 +603,18 @@ group by
 -- Exercícios com JOIN de varias tabelas e OUTER JOIN
 
 -- 	19)	pedidos de funcionario sem filho
+select num_ped as 'Pedido',
+	nome_func as 'Funcionario',
+    nome_dep as 'Dependente'
+	from pedidos p
+    join funcionarios f on p.cod_func = f.cod_func
+    left join dependentes d on f.cod_func = d.cod_func
+    where cod_dep is null
+    order by num_ped;
+    
 -- 	20)	pedidos de cliente solteiro
+
+
 -- 	21)	pedidos de cliente solteiro que comprou 'marisa monte';
 -- 	22)	pedidos de 'marisa monte', com nome do funcionario e nome do cliente
 -- 	23)	pedidos de mpb, exceto titulo começado com vogal, com nome do funcionario e nome do cliente e com o nome do conjuge e filhos, (se existirem)
