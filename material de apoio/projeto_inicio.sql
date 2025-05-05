@@ -621,7 +621,7 @@ select num_ped as 'Pedido',
     join pedidos p on c.cod_cli = p.cod_cli
     where nome_conj is null;
 
--- 	21)	pedidos de cliente solteiro que comprou 'marisa monte';
+-- 	21)	pedidos de cliente solteiro que comprou 'marisa monte'
 -- 	22)	pedidos de 'marisa monte', com nome do funcionario e nome do cliente
 -- 	23)	pedidos de mpb, exceto titulo começado com vogal, com nome do funcionario e nome do cliente e com o nome do conjuge e filhos, (se existirem)
 
