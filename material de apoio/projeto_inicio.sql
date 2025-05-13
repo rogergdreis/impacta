@@ -632,7 +632,7 @@ select num_ped as 'Pedido',
 -- 26) Apresente todos os clientes Solteiros 
 -- 27) Apresente todos os Clientes Casados 
 -- 28) Apresente todas as categorias que estão sem CD 
--- 29) Apresente	apenas os funcionários que tem dependentes e que nunca atenderam a nenhum pedido
+-- 29) Apresente apenas os funcionários que tem dependentes e que nunca atenderam a nenhum pedido
 -- 30) Mostre todos os funcionários que atenderam a pedidos de clientes casados
 -- 31) Apresente os dados dos CDs Mais Caros 
 
